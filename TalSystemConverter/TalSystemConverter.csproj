@@ -8,4 +8,12 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Image\what-is-an-ip-address-image-min.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Image\what-is-an-ip-address-image-min.png" />
+  </ItemGroup>
+
 </Project>

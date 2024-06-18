@@ -12,11 +12,13 @@ namespace TalSystemConverter.Viewmodel
         public RelayCommand HomeViewCommand { get; set; }
 
         public RelayCommand TalSysConViewCommand { get; set; }
-       
+        public RelayCommand IpSubnetViewCommand { get; set; }
+
         public HomeViewModel HomeVm { get; set; }
 
         public TalSystemConverterViewModel TalSysConVm { get; set; }
-        
+        public IpSubnetCalcViewModel IpSubnetVm { get; set; }
+
 
         private object _currentView;
 
@@ -36,6 +38,7 @@ namespace TalSystemConverter.Viewmodel
         {
             HomeVm = new HomeViewModel();
             TalSysConVm = new TalSystemConverterViewModel();
+            IpSubnetVm = new IpSubnetCalcViewModel();
             CurrentView = HomeVm;
 
             HomeViewCommand = new RelayCommand(o =>
@@ -47,6 +50,11 @@ namespace TalSystemConverter.Viewmodel
             {
                 CurrentView = TalSysConVm;
             });
+            IpSubnetViewCommand = new RelayCommand(o =>
+            { 
+                CurrentView = IpSubnetVm;
+            });
+
         }
 
     }

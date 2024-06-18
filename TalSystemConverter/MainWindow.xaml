@@ -46,6 +46,13 @@
                          FontSize="14"
                          Style="{StaticResource MenuBtnTheme}"
                          Command="{Binding TalSysConViewCommand}"/>
+                
+                <RadioButton Content="IpSubnet Calculator"
+                         Height="50"
+                         Foreground="White"
+                         FontSize="14"
+                         Style="{StaticResource MenuBtnTheme}"
+                         Command="{Binding IpSubnetViewCommand}"/>
 
             </StackPanel>
 
